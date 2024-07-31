@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+.box {
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  border-bottom-color: transparent;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.div-wrapper {
+  margin: 40px auto;
+  max-width: 60%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div-wrapper .header {
+  margin-top: 6px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-holder .app-logo-wrapper {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px;
+  background: white;
+}
+.footer,
+.sub-heading {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+h1 {
   color: white;
+  font-size: 52px;
+  text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.paragrapgh a {
+  color: white;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.line {
+  width: 10%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #fff);
+}
+.line.line-left {
+  transform: rotate(0deg);
+}
+.line.line-right {
+  transform: rotate(180deg);
+}
+.content .card-wrappper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 40px 0;
+}
+.card {
+  flex-basis: 25%;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 2px;
+}
+.card .card-header {
+  position: relative;
+  background: transparent;
+}
+.card .card-header .card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .card-header .card-image img {
+  margin: 20px 0;
+}
+.card-title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: white;
+  padding: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+.card-title p {
+  padding: 0 8px;
+  line-height: 25px;
+}
+.card .card-footer {
+  background: white;
+}
+.card .card-footer p {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
 }
